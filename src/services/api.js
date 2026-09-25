@@ -41,10 +41,30 @@ export const referralAPI = {
 }
 
 // ── Workspace
+// ── Workspace
 export const workspaceAPI = {
-  getAll        : ()        => axiosInstance.get('/workspace/get'),
-  getMembers    : ()        => axiosInstance.get('/workspace/members'),
-  create        : (data)    => axiosInstance.post('/workspace/create', data),
-  removeMember  : (userId)  => axiosInstance.delete(`/workspace/remove/${userId}`),
-  switchTo      : (wsId)    => axiosInstance.post('/workspace/switch', { workspaceId: wsId }),
+  getAll: () =>
+    axiosInstance.get('/workspace/get'),
+
+  getMembers: () =>
+    axiosInstance.get('/workspace/members'),
+
+  create: (data) =>
+    axiosInstance.post(
+      '/workspace/create',
+      data
+    ),
+
+  removeMember: (userId) =>
+    axiosInstance.delete(
+      `/workspace/remove/${userId}`
+    ),
+
+  switchTo: (workspaceId) =>
+    axiosInstance.post(
+      '/workspace/switch',
+      {
+        workspaceId,
+      }
+    ),
 }

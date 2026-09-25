@@ -1214,8 +1214,8 @@ export default function Categories() {
                   {[
                     'Category',
                     'Type',
-                    'Transactions',
-                    'Total Spend',
+                    // 'Transactions',
+                    // 'Total Spend',
                     'Actions',
                   ].map((h) => (
 
@@ -1270,7 +1270,7 @@ export default function Categories() {
                         {/* Category */}
                         <div className="flex items-center gap-3 min-w-0">
 
-                          <div
+                          {/* <div
                             className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
                             style={{
                               background:
@@ -1288,7 +1288,7 @@ export default function Categories() {
                                 '#94a3b8'
                               }
                             />
-                          </div>
+                          </div> */}
 
 
                           <div className="min-w-0">
@@ -1348,7 +1348,7 @@ export default function Categories() {
 
 
                         {/* Transactions */}
-                        <div className="text-sm text-slate-500 dark:text-slate-400">
+                        {/* <div className="text-sm text-slate-500 dark:text-slate-400">
 
                           {bd ? (
 
@@ -1373,11 +1373,11 @@ export default function Categories() {
 
                           )}
 
-                        </div>
+                        </div> */}
 
 
                         {/* Total Spend */}
-                        <div>
+                        {/* <div>
 
                           {bd ? (
 
@@ -1397,11 +1397,11 @@ export default function Categories() {
 
                           )}
 
-                        </div>
+                        </div> */}
 
 
                         {/* Actions */}
-                        <div className="flex items-center gap-1">
+                        <div className="flex items-center gap-4">
 
                           <button
                             onClick={() =>

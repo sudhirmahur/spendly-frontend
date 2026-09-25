@@ -3,7 +3,8 @@ import axios from 'axios'
 const axiosInstance = axios.create({
   baseURL:
     import.meta.env.VITE_BACKEND_URL ||
-    'https://expense-tracker-backend-kiap.onrender.com/api',
+    // 'https://expense-tracker-backend-kiap.onrender.com/api',
+    'http://localhost:5000/api',
 
   headers: {
     'Content-Type': 'application/json',
